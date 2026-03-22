@@ -1,0 +1,53 @@
+html, body {
+    overflow: hidden;
+    margin: 0;
+}
+
+body {
+    display: flex;
+    background-color: #0f172a;
+    color: white;
+}
+
+#container {
+    position: relative;
+    display: flex;
+    justify-content: flex-end;
+    transform-origin: top right ;
+    transform: scale(0.7);
+}
+
+.hex {
+    position: absolute;
+}
+
+.building {
+    position: absolute;
+}
+
+.game {
+    margin-left: 50px;
+    margin-top: 60px;
+    position: relative;
+    display: flex;
+    justify-content: flex-end;
+    height: 100vh;
+    background-color: #020617;
+}
+
+.text {
+    margin: 10px;
+    color: white;
+}
+
+button {
+    margin-top: 5px;
+}
+
+#lobby {
+    height: 100vh;
+    width: 200px;
+    background-color: #1e293b;
+    border-right: 2px solid #334155;
+}
+

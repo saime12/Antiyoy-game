@@ -1,0 +1,12 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 50 70" width="50" height="70">
+  <!-- Tree -->
+  <g transform="translate(25, 35)">
+    <ellipse cx="0" cy="28" rx="8" ry="3" fill="rgba(0,0,0,0.1)"/>
+    <!-- Trunk -->
+    <rect x="-3" y="12" width="6" height="16" rx="1" fill="#8b6914"/>
+    <!-- Canopy -->
+    <circle cx="0" cy="0" r="16" fill="#3a9e3a"/>
+    <circle cx="-6" cy="-4" r="10" fill="#4ab84a"/>
+    <circle cx="5" cy="-2" r="9" fill="#35903a"/>
+  </g>
+</svg>
