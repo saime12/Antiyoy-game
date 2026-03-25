@@ -1,6 +1,9 @@
 const div = document.getElementById('container')
 const joinBtn = document.getElementById('joinBtn')
 const nameInput = document.getElementById('name')
+const lobby = document.getElementById('lobby')
+
+let username = nameInput.value
 
 async function getData() {
     const response = await fetch("https://tinkr.tech/sdb/Daniel_Antiyoy/Antiyoy_database")
@@ -50,11 +53,6 @@ async function log() {
 log()
 
 async function post() {
-    const resp = await fetch("https://tinkr.tech/sdb/Daniel_Antiyoy/Antiyoy_database")
-    const data = await resp.json()
-
-    const username = nameInput.value
-
     const response = await fetch("https://tinkr.tech/sdb/Daniel_Antiyoy/Antiyoy_database", {
         method: 'POST',
         headers: {
@@ -70,4 +68,10 @@ async function post() {
 
 joinBtn.addEventListener('click', async function() {
     await post()
+
+    const playerDiv = document.createElement('div')
+    const h1 = document.createElement('h1')
+    h1.textContent = username
+    playerDiv.appendChild(h1)
+    lobby.appendChild(playerDiv)
 })
